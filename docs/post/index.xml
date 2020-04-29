@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | ポートフォリオ</title>
+    <link>https://etckanikama.github.io/MyPortfolio/post/</link>
+      <atom:link href="https://etckanikama.github.io/MyPortfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ja</language><lastBuildDate>Sun, 26 Apr 2020 15:38:02 +0900</lastBuildDate>
+    <image>
+      <url>https://etckanikama.github.io/MyPortfolio/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>https://etckanikama.github.io/MyPortfolio/post/</link>
+    </image>
+    
+    <item>
+      <title>first commit</title>
+      <link>https://etckanikama.github.io/MyPortfolio/posts/using-hugo/</link>
+      <pubDate>Sun, 26 Apr 2020 15:38:02 +0900</pubDate>
+      <guid>https://etckanikama.github.io/MyPortfolio/posts/using-hugo/</guid>
+      <description>&lt;h2 id=&#34;今日はいい天気でした&#34;&gt;今日はいい天気でした&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;雨も降りました&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;kkkk&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

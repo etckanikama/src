@@ -1,0 +1,695 @@
+.
+├── LICENSE.md
+├── README.md
+├── academic.Rproj
+├── assets
+│   └── images
+├── config
+│   └── _default
+│       ├── config.toml
+│       ├── languages.toml
+│       ├── menus.toml
+│       └── params.toml
+├── config.toml
+├── content
+│   ├── authors
+│   │   └── admin
+│   │       ├── _index.md
+│   │       └── avatar.jpg
+│   ├── home
+│   │   ├── about.md
+│   │   ├── contact.md
+│   │   ├── experience.md
+│   │   ├── index.md
+│   │   ├── projects.md
+│   │   └── skills.md
+│   ├── post
+│   │   └── _index.md
+│   ├── posts
+│   │   └── using-hugo.md
+│   ├── privacy.md
+│   ├── project
+│   │   └── remoto-controler
+│   │       ├── featured.jpg
+│   │       └── index.md
+│   ├── publication
+│   │   └── _index.md
+│   ├── talk
+│   │   └── _index.md
+│   └── terms.md
+├── data
+│   ├── fonts
+│   ├── page_sharer.toml
+│   └── themes
+├── docs
+│   ├── 404.html
+│   ├── admin
+│   │   ├── config.yml
+│   │   └── index.html
+│   ├── author
+│   │   ├── hirayama-daiki
+│   │   │   ├── avatar.jpg
+│   │   │   ├── avatar_hu1bf3cecd9f873c7fdc24c07ed5f13d5e_108283_270x270_fill_q90_lanczos_center.jpg
+│   │   │   ├── index.html
+│   │   │   └── index.xml
+│   │   └── kanikama
+│   │       ├── avatar.jpg
+│   │       ├── avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg
+│   │       ├── index.html
+│   │       └── index.xml
+│   ├── authors
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   ├── categories
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   ├── css
+│   │   └── academic.css
+│   ├── images
+│   │   ├── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png
+│   │   ├── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png
+│   │   └── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png
+│   ├── img
+│   ├── index.html
+│   ├── index.json
+│   ├── index.webmanifest
+│   ├── index.xml
+│   ├── js
+│   │   ├── academic.min.37431be2d92d7fb0160054761ab79602.js
+│   │   └── vendor
+│   │       └── reveal.js
+│   │           └── plugin
+│   │               └── notes
+│   │                   ├── notes.html
+│   │                   └── notes.js
+│   ├── post
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   ├── posts
+│   │   └── using-hugo
+│   │       └── index.html
+│   ├── project
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   ├── page
+│   │   │   └── 1
+│   │   │       └── index.html
+│   │   └── remoto-controler
+│   │       ├── featured.jpg
+│   │       ├── featured_hue0064bdef810ef044b068610f1390fa9_244878_550x0_resize_q90_lanczos.jpg
+│   │       ├── featured_hue0064bdef810ef044b068610f1390fa9_244878_720x0_resize_q90_lanczos.jpg
+│   │       └── index.html
+│   ├── publication
+│   │   ├── index.html
+│   │   └── index.xml
+│   ├── publication_types
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   ├── sitemap.xml
+│   ├── tag
+│   │   └── demo
+│   │       ├── index.html
+│   │       ├── index.xml
+│   │       └── page
+│   │           └── 1
+│   │               └── index.html
+│   ├── tags
+│   │   ├── index.html
+│   │   ├── index.xml
+│   │   └── page
+│   │       └── 1
+│   │           └── index.html
+│   └── talk
+│       ├── index.html
+│       └── index.xml
+├── netlify.toml
+├── resources
+│   └── _gen
+│       ├── assets
+│       │   └── scss
+│       │       ├── myportfolio
+│       │       │   └── scss
+│       │       │       ├── main.scss_6c95cc1249b26b124274204dbf970c34.content
+│       │       │       ├── main.scss_6c95cc1249b26b124274204dbf970c34.json
+│       │       │       ├── main.scss_76ac6956597c32fec7ddf60d408db3ab.content
+│       │       │       └── main.scss_76ac6956597c32fec7ddf60d408db3ab.json
+│       │       └── scss
+│       │           ├── main.scss_6c95cc1249b26b124274204dbf970c34.content
+│       │           ├── main.scss_6c95cc1249b26b124274204dbf970c34.json
+│       │           ├── main.scss_76ac6956597c32fec7ddf60d408db3ab.content
+│       │           └── main.scss_76ac6956597c32fec7ddf60d408db3ab.json
+│       └── images
+│           ├── authors
+│           │   └── admin
+│           │       ├── avatar_hu1bf3cecd9f873c7fdc24c07ed5f13d5e_108283_270x270_fill_q90_lanczos_center.jpg
+│           │       └── avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg
+│           ├── images
+│           │   ├── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png
+│           │   ├── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png
+│           │   └── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png
+│           └── project
+│               └── remoto-controler
+│                   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_329522_550x0_resize_q90_lanczos.jpg
+│                   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_329522_720x0_resize_q90_lanczos.jpg
+│                   ├── featured_hue0064bdef810ef044b068610f1390fa9_244878_550x0_resize_q90_lanczos.jpg
+│                   └── featured_hue0064bdef810ef044b068610f1390fa9_244878_720x0_resize_q90_lanczos.jpg
+├── scripts
+│   └── init_kickstart.sh
+├── static
+│   ├── admin
+│   │   ├── config.yml
+│   │   └── index.html
+│   └── img
+├── themes
+│   └── academic
+│       ├── LICENSE.md
+│       ├── README.md
+│       ├── academic.png
+│       ├── archetypes
+│       │   ├── authors
+│       │   │   ├── _index.md
+│       │   │   └── avatar.jpg
+│       │   ├── default.md
+│       │   ├── docs.md
+│       │   ├── home.md
+│       │   ├── post
+│       │   │   └── index.md
+│       │   ├── project
+│       │   │   └── index.md
+│       │   ├── publication
+│       │   │   └── index.md
+│       │   ├── slides
+│       │   │   └── index.md
+│       │   └── talk
+│       │       └── index.md
+│       ├── assets
+│       │   ├── css
+│       │   │   ├── reveal.css
+│       │   │   └── reveal_custom.css
+│       │   ├── images
+│       │   │   └── icon.png
+│       │   ├── js
+│       │   │   ├── academic-search.js
+│       │   │   ├── academic.js
+│       │   │   ├── algolia-search.js
+│       │   │   ├── mathjax-config.js
+│       │   │   └── vendor
+│       │   │       └── bootstrap.min.js
+│       │   └── scss
+│       │       ├── academic
+│       │       │   ├── _card.scss
+│       │       │   ├── _content.scss
+│       │       │   ├── _dark.scss
+│       │       │   ├── _docs.scss
+│       │       │   ├── _integrations.scss
+│       │       │   ├── _listings.scss
+│       │       │   ├── _nav.scss
+│       │       │   ├── _root.scss
+│       │       │   ├── _search.scss
+│       │       │   ├── _widgets.scss
+│       │       │   └── academic.scss
+│       │       ├── bootstrap_variables.scss
+│       │       ├── custom.scss
+│       │       ├── main.scss
+│       │       └── vendor
+│       │           └── bootstrap
+│       │               ├── _alert.scss
+│       │               ├── _badge.scss
+│       │               ├── _breadcrumb.scss
+│       │               ├── _button-group.scss
+│       │               ├── _buttons.scss
+│       │               ├── _card.scss
+│       │               ├── _carousel.scss
+│       │               ├── _close.scss
+│       │               ├── _code.scss
+│       │               ├── _custom-forms.scss
+│       │               ├── _dropdown.scss
+│       │               ├── _forms.scss
+│       │               ├── _functions.scss
+│       │               ├── _grid.scss
+│       │               ├── _images.scss
+│       │               ├── _input-group.scss
+│       │               ├── _jumbotron.scss
+│       │               ├── _list-group.scss
+│       │               ├── _media.scss
+│       │               ├── _mixins.scss
+│       │               ├── _modal.scss
+│       │               ├── _nav.scss
+│       │               ├── _navbar.scss
+│       │               ├── _pagination.scss
+│       │               ├── _popover.scss
+│       │               ├── _print.scss
+│       │               ├── _progress.scss
+│       │               ├── _reboot.scss
+│       │               ├── _root.scss
+│       │               ├── _spinners.scss
+│       │               ├── _tables.scss
+│       │               ├── _toasts.scss
+│       │               ├── _tooltip.scss
+│       │               ├── _transitions.scss
+│       │               ├── _type.scss
+│       │               ├── _utilities.scss
+│       │               ├── _variables.scss
+│       │               ├── bootstrap-grid.scss
+│       │               ├── bootstrap-reboot.scss
+│       │               ├── bootstrap.scss
+│       │               ├── mixins
+│       │               │   ├── _alert.scss
+│       │               │   ├── _background-variant.scss
+│       │               │   ├── _badge.scss
+│       │               │   ├── _border-radius.scss
+│       │               │   ├── _box-shadow.scss
+│       │               │   ├── _breakpoints.scss
+│       │               │   ├── _buttons.scss
+│       │               │   ├── _caret.scss
+│       │               │   ├── _clearfix.scss
+│       │               │   ├── _deprecate.scss
+│       │               │   ├── _float.scss
+│       │               │   ├── _forms.scss
+│       │               │   ├── _gradients.scss
+│       │               │   ├── _grid-framework.scss
+│       │               │   ├── _grid.scss
+│       │               │   ├── _hover.scss
+│       │               │   ├── _image.scss
+│       │               │   ├── _list-group.scss
+│       │               │   ├── _lists.scss
+│       │               │   ├── _nav-divider.scss
+│       │               │   ├── _pagination.scss
+│       │               │   ├── _reset-text.scss
+│       │               │   ├── _resize.scss
+│       │               │   ├── _screen-reader.scss
+│       │               │   ├── _size.scss
+│       │               │   ├── _table-row.scss
+│       │               │   ├── _text-emphasis.scss
+│       │               │   ├── _text-hide.scss
+│       │               │   ├── _text-truncate.scss
+│       │               │   ├── _transition.scss
+│       │               │   └── _visibility.scss
+│       │               ├── utilities
+│       │               │   ├── _align.scss
+│       │               │   ├── _background.scss
+│       │               │   ├── _borders.scss
+│       │               │   ├── _clearfix.scss
+│       │               │   ├── _display.scss
+│       │               │   ├── _embed.scss
+│       │               │   ├── _flex.scss
+│       │               │   ├── _float.scss
+│       │               │   ├── _overflow.scss
+│       │               │   ├── _position.scss
+│       │               │   ├── _screenreaders.scss
+│       │               │   ├── _shadows.scss
+│       │               │   ├── _sizing.scss
+│       │               │   ├── _spacing.scss
+│       │               │   ├── _stretched-link.scss
+│       │               │   ├── _text.scss
+│       │               │   └── _visibility.scss
+│       │               └── vendor
+│       │                   └── _rfs.scss
+│       ├── data
+│       │   ├── academic.toml
+│       │   ├── assets.toml
+│       │   ├── fonts
+│       │   │   ├── classic.toml
+│       │   │   ├── minimal.toml
+│       │   │   ├── mr_robot.toml
+│       │   │   ├── native.toml
+│       │   │   └── rose.toml
+│       │   ├── i18n
+│       │   │   ├── languages.yaml
+│       │   │   └── rtl.toml
+│       │   ├── page_sharer.toml
+│       │   ├── publication_types.toml
+│       │   └── themes
+│       │       ├── 1950s.toml
+│       │       ├── apogee.toml
+│       │       ├── coffee.toml
+│       │       ├── dark.toml
+│       │       ├── forest.toml
+│       │       ├── minimal.toml
+│       │       ├── mr_robot.toml
+│       │       ├── ocean.toml
+│       │       ├── rose.toml
+│       │       └── strawberry.toml
+│       ├── exampleSite
+│       │   ├── config
+│       │   │   └── _default
+│       │   │       ├── config.toml
+│       │   │       ├── languages.toml
+│       │   │       ├── menus.toml
+│       │   │       └── params.toml
+│       │   ├── content
+│       │   │   ├── authors
+│       │   │   │   └── admin
+│       │   │   │       ├── _index.md
+│       │   │   │       └── avatar.jpg
+│       │   │   ├── courses
+│       │   │   │   ├── _index.md
+│       │   │   │   └── example
+│       │   │   │       ├── _index.md
+│       │   │   │       ├── example1.md
+│       │   │   │       └── example2.md
+│       │   │   ├── home
+│       │   │   │   ├── about.md
+│       │   │   │   ├── accomplishments.md
+│       │   │   │   ├── contact.md
+│       │   │   │   ├── demo.md
+│       │   │   │   ├── experience.md
+│       │   │   │   ├── featured.md
+│       │   │   │   ├── gallery
+│       │   │   │   │   ├── gallery
+│       │   │   │   │   │   ├── theme-1950s.png
+│       │   │   │   │   │   ├── theme-apogee.png
+│       │   │   │   │   │   ├── theme-coffee-playfair.png
+│       │   │   │   │   │   ├── theme-dark.png
+│       │   │   │   │   │   ├── theme-default.png
+│       │   │   │   │   │   ├── theme-forest.png
+│       │   │   │   │   │   ├── theme-ocean.png
+│       │   │   │   │   │   └── theme-strawberry.png
+│       │   │   │   │   └── index.md
+│       │   │   │   ├── hero.md
+│       │   │   │   ├── index.md
+│       │   │   │   ├── people.md
+│       │   │   │   ├── posts.md
+│       │   │   │   ├── projects.md
+│       │   │   │   ├── publications.md
+│       │   │   │   ├── skills.md
+│       │   │   │   ├── slider.md
+│       │   │   │   ├── tags.md
+│       │   │   │   └── talks.md
+│       │   │   ├── post
+│       │   │   │   ├── _index.md
+│       │   │   │   ├── getting-started
+│       │   │   │   │   ├── featured.jpg
+│       │   │   │   │   └── index.md
+│       │   │   │   ├── jupyter
+│       │   │   │   │   ├── featured.png
+│       │   │   │   │   ├── index.ipynb
+│       │   │   │   │   ├── index.md
+│       │   │   │   │   └── index_1_0.png
+│       │   │   │   └── writing-technical-content
+│       │   │   │       ├── featured.jpg
+│       │   │   │       └── index.md
+│       │   │   ├── privacy.md
+│       │   │   ├── project
+│       │   │   │   ├── external-project
+│       │   │   │   │   └── index.md
+│       │   │   │   └── internal-project
+│       │   │   │       ├── featured.jpg
+│       │   │   │       └── index.md
+│       │   │   ├── publication
+│       │   │   │   ├── _index.md
+│       │   │   │   ├── conference-paper
+│       │   │   │   │   ├── cite.bib
+│       │   │   │   │   ├── featured.jpg
+│       │   │   │   │   └── index.md
+│       │   │   │   ├── journal-article
+│       │   │   │   │   ├── cite.bib
+│       │   │   │   │   ├── featured.jpg
+│       │   │   │   │   └── index.md
+│       │   │   │   └── preprint
+│       │   │   │       ├── featured.jpg
+│       │   │   │       └── index.md
+│       │   │   ├── slides
+│       │   │   │   └── example
+│       │   │   │       └── index.md
+│       │   │   ├── talk
+│       │   │   │   ├── _index.md
+│       │   │   │   └── example
+│       │   │   │       ├── featured.jpg
+│       │   │   │       └── index.md
+│       │   │   └── terms.md
+│       │   ├── resources
+│       │   │   └── _gen
+│       │   │       ├── assets
+│       │   │       │   └── scss
+│       │   │       │       └── scss
+│       │   │       │           ├── main.scss_6c95cc1249b26b124274204dbf970c34.content
+│       │   │       │           └── main.scss_6c95cc1249b26b124274204dbf970c34.json
+│       │   │       └── images
+│       │   │           ├── authors
+│       │   │           │   ├── admin
+│       │   │           │   │   └── avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg
+│       │   │           │   └── admin2
+│       │   │           │       └── avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg
+│       │   │           ├── home
+│       │   │           │   └── gallery
+│       │   │           │       └── gallery
+│       │   │           │           ├── theme-1950s_huaf5482f8cea0c5a703a328640e3b7509_21614_0x190_resize_lanczos_2.png
+│       │   │           │           ├── theme-apogee_hu4b45d99db97150df01464c393bfd17d4_24119_0x190_resize_lanczos_2.png
+│       │   │           │           ├── theme-coffee-playfair_hu446a8f670cc5622adcc77b97ba95f6c5_22462_0x190_resize_lanczos_2.png
+│       │   │           │           ├── theme-dark_hu1e8601ecc47f58eada7743fdcd709d3d_21456_0x190_resize_lanczos_2.png
+│       │   │           │           ├── theme-default_huba6228b7bdf30e2f03f12ea91b2cba0d_21751_0x190_resize_lanczos_2.png
+│       │   │           │           ├── theme-forest_hu4f093a1c683134431456584193ea41ee_21797_0x190_resize_lanczos_2.png
+│       │   │           │           ├── theme-ocean_hu14831ccafc2219f30a7a096fa7617e01_21760_0x190_resize_lanczos_2.png
+│       │   │           │           └── theme-strawberry_hu36b0b347fcca08bd39e2df22dcedbdfb_39532_0x190_resize_lanczos_2.png
+│       │   │           ├── images
+│       │   │           │   ├── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png
+│       │   │           │   ├── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png
+│       │   │           │   └── icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png
+│       │   │           ├── post
+│       │   │           │   ├── getting-started
+│       │   │           │   │   ├── featured_hub9ee31969f44a6711206a2baf9f065b4_241861_1200x0_resize_q90_lanczos.jpg
+│       │   │           │   │   └── featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q90_lanczos.jpg
+│       │   │           │   ├── jupyter
+│       │   │           │   │   ├── featured_hub1daa031c2af6888ff37bd93eb033a1a_71549_150x0_resize_lanczos_2.png
+│       │   │           │   │   └── featured_hub1daa031c2af6888ff37bd93eb033a1a_71549_720x0_resize_lanczos_2.png
+│       │   │           │   └── writing-technical-content
+│       │   │           │       ├── featured_huc72159e0fc0d14b85f60d34436a630f0_266353_150x0_resize_q90_lanczos.jpg
+│       │   │           │       └── featured_huc72159e0fc0d14b85f60d34436a630f0_266353_2560x2560_fit_q90_lanczos.jpg
+│       │   │           ├── project
+│       │   │           │   ├── external-project
+│       │   │           │   │   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_329522_550x0_resize_q90_lanczos.jpg
+│       │   │           │   │   └── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_329522_720x0_resize_q90_lanczos.jpg
+│       │   │           │   └── internal-project
+│       │   │           │       ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_224363_550x0_resize_q90_lanczos.jpg
+│       │   │           │       └── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_224363_720x0_resize_q90_lanczos.jpg
+│       │   │           ├── publication
+│       │   │           │   ├── conference-paper
+│       │   │           │   │   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_150x0_resize_q90_lanczos.jpg
+│       │   │           │   │   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_720x0_resize_q90_lanczos.jpg
+│       │   │           │   │   └── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_918x517_fill_q90_lanczos_smart1.jpg
+│       │   │           │   ├── journal-article
+│       │   │           │   │   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_150x0_resize_q90_lanczos.jpg
+│       │   │           │   │   └── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_720x0_resize_q90_lanczos.jpg
+│       │   │           │   └── preprint
+│       │   │           │       ├── featured_hu559a5add5185b02575aa8333502ab2cc_220813_150x0_resize_q90_lanczos.jpg
+│       │   │           │       └── featured_hu559a5add5185b02575aa8333502ab2cc_220813_720x0_resize_q90_lanczos.jpg
+│       │   │           └── talk
+│       │   │               └── example
+│       │   │                   ├── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_150x0_resize_q90_lanczos.jpg
+│       │   │                   └── featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_720x0_resize_q90_lanczos.jpg
+│       │   └── static
+│       │       ├── admin
+│       │       │   ├── config.yml
+│       │       │   └── index.html
+│       │       └── img
+│       │           ├── boards.jpg
+│       │           ├── headers
+│       │           │   └── bubbles-wide.jpg
+│       │           └── hero-academic.png
+│       ├── i18n
+│       │   ├── ar.yaml
+│       │   ├── ca.yaml
+│       │   ├── cs.yaml
+│       │   ├── da.yaml
+│       │   ├── de.yaml
+│       │   ├── el.yaml
+│       │   ├── en.yaml
+│       │   ├── es.yaml
+│       │   ├── et.yaml
+│       │   ├── eu.yaml
+│       │   ├── fr.yaml
+│       │   ├── hu.yaml
+│       │   ├── id.yaml
+│       │   ├── it.yaml
+│       │   ├── ja.yaml
+│       │   ├── km.yaml
+│       │   ├── ko.yaml
+│       │   ├── lt.yaml
+│       │   ├── lv.yaml
+│       │   ├── nl.yaml
+│       │   ├── pl.yaml
+│       │   ├── pt.yaml
+│       │   ├── ro.yaml
+│       │   ├── ru.yaml
+│       │   ├── so.yaml
+│       │   ├── sv.yaml
+│       │   ├── tr.yaml
+│       │   ├── uk.yaml
+│       │   ├── vi.yaml
+│       │   ├── zh-Hant.yaml
+│       │   └── zh.yaml
+│       ├── images
+│       │   ├── screenshot.png
+│       │   ├── theme-1950s.png
+│       │   ├── theme-apogee.png
+│       │   ├── theme-coffee-playfair.png
+│       │   ├── theme-cupcake.png
+│       │   ├── theme-dark.png
+│       │   ├── theme-default.png
+│       │   ├── theme-forest.png
+│       │   ├── theme-ocean.png
+│       │   ├── theme-spacer.png
+│       │   ├── theme-strawberry.png
+│       │   ├── themes.png
+│       │   └── tn.png
+│       ├── layouts
+│       │   ├── 404.html
+│       │   ├── _default
+│       │   │   ├── _markup
+│       │   │   │   └── render-link.html
+│       │   │   ├── baseof.html
+│       │   │   ├── list.html
+│       │   │   ├── rss.xml
+│       │   │   └── single.html
+│       │   ├── authors
+│       │   │   ├── list.html
+│       │   │   └── terms.html
+│       │   ├── docs
+│       │   │   ├── list.html
+│       │   │   └── single.html
+│       │   ├── index.html
+│       │   ├── index.json
+│       │   ├── index.webmanifest
+│       │   ├── partials
+│       │   │   ├── citation.html
+│       │   │   ├── comments
+│       │   │   │   ├── commento.html
+│       │   │   │   └── disqus.html
+│       │   │   ├── comments.html
+│       │   │   ├── cookie_consent.html
+│       │   │   ├── custom_head.html
+│       │   │   ├── custom_js.html
+│       │   │   ├── docs_layout.html
+│       │   │   ├── docs_sidebar.html
+│       │   │   ├── docs_toc_foot.html
+│       │   │   ├── functions
+│       │   │   │   ├── get_address.html
+│       │   │   │   ├── get_author_name.html
+│       │   │   │   ├── get_event_dates.html
+│       │   │   │   ├── get_icon.html
+│       │   │   │   ├── get_logo.html
+│       │   │   │   ├── get_logo_url.html
+│       │   │   │   ├── get_pub_types.html
+│       │   │   │   └── parse_theme.html
+│       │   │   ├── jsonld
+│       │   │   │   ├── article.html
+│       │   │   │   ├── business.html
+│       │   │   │   ├── event.html
+│       │   │   │   ├── main.html
+│       │   │   │   └── website.html
+│       │   │   ├── li_card.html
+│       │   │   ├── li_citation.html
+│       │   │   ├── li_compact.html
+│       │   │   ├── li_list.html
+│       │   │   ├── marketing
+│       │   │   │   ├── google_analytics.html
+│       │   │   │   └── google_tag_manager.html
+│       │   │   ├── navbar.html
+│       │   │   ├── page_author.html
+│       │   │   ├── page_author_card.html
+│       │   │   ├── page_edit.html
+│       │   │   ├── page_footer.html
+│       │   │   ├── page_header.html
+│       │   │   ├── page_links.html
+│       │   │   ├── page_links_div.html
+│       │   │   ├── page_metadata.html
+│       │   │   ├── page_metadata_authors.html
+│       │   │   ├── pagination.html
+│       │   │   ├── portfolio_li_card.html
+│       │   │   ├── portfolio_li_compact.html
+│       │   │   ├── portfolio_li_list.html
+│       │   │   ├── portfolio_li_showcase.html
+│       │   │   ├── search.html
+│       │   │   ├── section_pager.html
+│       │   │   ├── share.html
+│       │   │   ├── site_footer.html
+│       │   │   ├── site_head.html
+│       │   │   ├── site_js.html
+│       │   │   ├── slides.html
+│       │   │   ├── social_links.html
+│       │   │   ├── tags.html
+│       │   │   ├── widget_page.html
+│       │   │   └── widgets
+│       │   │       ├── about.html
+│       │   │       ├── accomplishments.html
+│       │   │       ├── blank.html
+│       │   │       ├── contact.html
+│       │   │       ├── experience.html
+│       │   │       ├── featured.html
+│       │   │       ├── featurette.html
+│       │   │       ├── hero.html
+│       │   │       ├── pages.html
+│       │   │       ├── people.html
+│       │   │       ├── portfolio.html
+│       │   │       ├── slider.html
+│       │   │       └── tag_cloud.html
+│       │   ├── project
+│       │   │   └── single.html
+│       │   ├── publication
+│       │   │   └── single.html
+│       │   ├── section
+│       │   │   ├── docs.html
+│       │   │   ├── post.html
+│       │   │   ├── publication.html
+│       │   │   └── talk.html
+│       │   ├── shortcodes
+│       │   │   ├── alert.html
+│       │   │   ├── diagram.html
+│       │   │   ├── figure.html
+│       │   │   ├── fragment.html
+│       │   │   ├── gallery.html
+│       │   │   ├── gdocs.html
+│       │   │   ├── hl.html
+│       │   │   ├── icon.html
+│       │   │   ├── list_categories.html
+│       │   │   ├── list_tags.html
+│       │   │   ├── mention.html
+│       │   │   ├── slide.html
+│       │   │   ├── speaker_note.html
+│       │   │   ├── staticref.html
+│       │   │   ├── toc.html
+│       │   │   └── video.html
+│       │   ├── slides
+│       │   │   ├── baseof.html
+│       │   │   ├── list.html
+│       │   │   └── single.html
+│       │   ├── talk
+│       │   │   └── single.html
+│       │   └── widget_page
+│       │       └── single.html
+│       ├── netlify.toml
+│       ├── package-lock.json
+│       ├── package.json
+│       ├── scripts
+│       │   ├── gen_demo_resources.sh
+│       │   ├── list_language_packs.py
+│       │   ├── sync_i18n.py
+│       │   ├── update_bootstrap.sh
+│       │   └── view_demo.sh
+│       ├── static
+│       │   └── js
+│       │       └── vendor
+│       │           └── reveal.js
+│       │               └── plugin
+│       │                   └── notes
+│       │                       ├── notes.html
+│       │                       └── notes.js
+│       └── theme.toml
+├── tree-result.txt
+├── update_academic.sh
+└── view.sh
+
+182 directories, 510 files
