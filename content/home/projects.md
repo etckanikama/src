@@ -28,18 +28,22 @@ subtitle = ""
   [[content.filter_button]]
     name = "電子工作"
     tag = "electrical"
+  #　完成品のみ
 
   [[content.filter_button]]
     name = "ソフトウェア"
     tag = "software"
+  # 完成品のみ
 
   [[content.filter_button]]
-    name = "日常"
+    name = "ゆるふわブログ"
     tag = "today"
+  # 就活とか大学のこととか
   
   [[content.filter_button]]
     name = "Other"
     tag = "Demo"
+  # 制作過程とか
 
 
 
