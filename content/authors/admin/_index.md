@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Hirayama Daiki
+title: かにかま
 
 # Username (this should match the folder name)
 authors:

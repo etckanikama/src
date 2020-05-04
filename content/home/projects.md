@@ -36,7 +36,7 @@ subtitle = ""
   # 完成品のみ
 
   [[content.filter_button]]
-    name = "ゆるふわブログ"
+    name = "日常"
     tag = "today"
   # 就活とか大学のこととか
   
